@@ -1,21 +1,19 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+`Animais de Rua Desabrigados`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+UNIVERSIDADE PUC MINAS
+PRAÇA DA LIBERDADE – PRÉDIO FERNANDA
+SUPERIOR EM ENGENHARIA DE SOFTWARE
+1/2022
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+ADRIEL XAVIER DE SOUZA, ENZO OTAVIO PELIGRINO, GABRIEL DOLABELA 
+MARQUES, LEANDRO MONTEIRO DA SILVA, LUCAS MONTEIRO LIMA, 
+MATHEUS FERNANDES DE OLIVEIRA E PALOMA DIAS DE CARVALHO
 
 # Estrutura do Documento
 
@@ -31,13 +29,10 @@
   - [Personas e Mapas de Empatia](#personas-e-mapas-de-empatia)
   - [Histórias de Usuários](#histórias-de-usuários)
   - [Requisitos](#requisitos)
-    - [Requisitos Funcionais](#requisitos-funcionais)
-    - [Requisitos não Funcionais](#requisitos-não-funcionais)
   - [Restrições](#restrições)
 - [Projeto de Interface](#projeto-de-interface)
-  - [User Flow](#user-flow)
-  - [Wireframes](#wireframes)
-- [Metodologia](#metodologia)
+  - [Fluxo de usuário e wireframe](#Fluxo-de-usuário-e-wireframe)
+  - [Metodologia](#metodologia)
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
@@ -53,252 +48,184 @@
 
 
 # Introdução
+É inequívoco que o índice de animais desabrigados no Brasil e no mundo é massivo e 
+as consequências dessa infelicidade são mais impactantes do que percebemos durante 
+nosso dia-a-dia, junto disso, o isolamento que o mundo teve que viver, em virtude da 
+pandemia do COVID-19, ampliou esse problema devido ao alto nível de abandonos 
+pelas dificuldades de se manter um animal ou até mesmo pela desinformação que 
+permeava várias pessoas em relação às formas de transmissão do vírus. Nesse texto, 
+entenderemos um pouco mais sobre o tema e como a tecnologia pode ajudar a soluciona-lo.
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Falar sobre animais desabrigados pode ser um desafio, um tema tão simples pode se 
+mostrar muito mais complexo quando analisado em suas ramificações. Os animais estão 
+juntos do homem desde sempre, desde a pré-história o homem vem sendo um impulso 
+evolutivo que atrai animais para uma domesticação espontânea ou direta, sendo a 
+primeira causada pela mansidão de certos animais tolerantes aos humanos, que foram 
+se aproximando com o tempo, como os lobos, e se auto domesticaram.
+De acordo com o livro de Charles Darwin, The Variation of Animals and Plants Under 
+Domestication – 1868, a domesticação esteve quase sempre presente na vida do ser 
+humano, usando animais para criação de tecido, ou para alimentação, para ajudar nas 
+caças e batalhas ou até mesmo para ajudar na reprodução da agricultura. Essa 
+domesticação causa uma seleção mais restrita e rápida aos animais do que a natural e 
+com o passar dos anos o homem causou vários outros impactos diretos nesses animais 
+domésticos, a mistura de certos DNAs deu origem a várias espécies no mundo, mas 
+algumas delas mais frágeis e problemáticas. 
+Hoje, ironicamente, esses animais que tanto acompanharam o homem durante sua 
+jornada, se encontram desabrigados. Muitas pessoas não se interessam em acolhe-los
+por inúmeros motivos, desde a importante questão financeira até o fútil fato de que a 
+maioria dos animais desabrigos “não são de raça”. A OMS estima que existam 
+aproximadamente 10 milhões de gatos e 20 milhões de cães desabrigados no país e uma 
+pesquisa do IBOPE e Instituto Waltham feita em 2015 mostra que seis a cada dez 
+brasileiros deixaram seu animal caso tivessem que se mudar, sendo esse um dos 
+principais motivos de abandono, seguido de falta de tempo, comportamento do animal, 
+chegada de um filho(a), entre outros.
+Não obstante, no período atual que o mundo vive, após um forte confinamento, um novo 
+recorde de abandono fora alcançado, ONGs se encontram lotadas e sem recursos, as 
+5
+doações despencaram, pessoas que haviam adotado animais no início da pandemia para 
+lhes fazer companhia desfizeram deles com o tempo.
+Essa situação deixa um grande vazio no coração das pessoas que se importam, e o frio
+mundo em que esses animais são submetidos a viver é de um sofrimento sem igual, além 
+disso, esses animais trazem uma bateria de problemas para a saúde pública, já que 
+transmitem múltiplas doenças e causam outras adversidades, como acidentes, poluição, 
+as vezes atacam as pessoas, etc.
+Agora que entendemos melhor a relação que esses animais domesticados possuem com 
+os humanos, todo o infortúnio que causam por não terem um lar e as diversas camadas 
+que levam esses animais às ruas, compreendemos que não é uma tarefa fácil de 
+solucionar, e nos questionamos que, dada a constante evolução da tecnologia, se esse 
+problema poderia ser diminuído e até extinguido usando nossos recursos atuais.
 
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Visamos, com esse projeto, amenizar o percentual de animais desabrigados nas ruas, 
+criar uma rede de cooperação mútua, com as ONGs e seus recursos e doações, com 
+veterinários que se disponibilizarem de fazer os primeiros contatos com o cachorro 
+recém adotado por um preço baixa ou nulo, com o governo para disponibilidade de 
+vacinas e castrações gratuitas, lojas com conteúdos para os animais domésticos e casas 
+de rações que façam um preço acessível para os primeiros dias do animal recém adotado. 
+Todos esses recursos almejados pelo projeto servem, não só para um auxílio à essas 
+pessoas que se disponibilizarem de fazer um acolhimento responsável, mas também 
+como incentivo para o mesmo.
+O grupo também considera a importante junção com investidores e/ou compradores da 
+ideia.
+Por último, mas talvez o mais importante, o projeto conta com a colaboração das 
+pessoas que se importam e possuem a vontade de ajudar, compartilhando, identificando 
+esses animais, doando, etc., o software conseguirá ajudar na mesma proporção da 
+vontade das pessoas de quererem ajudar.
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O grupo foi levado a esse tema pelo recorrente abandono de animais e o alto índice dos 
+mesmos desabrigados nas ruas, esse problema não é nenhuma novidade, e durante a 
+atual quarentena que o mundo teve que se submeter, as taxas de abandono cresceram 
+exponencialmente. Diariamente as pessoas abandonam seus animais, ou até cometem 
+maus-tratos contra eles, sendo um ato criminoso previsto pela Lei de Crimes Ambientais 
+(Lei 9.605/1998). Toda essa frequência de maus-tratos, abandonos e animais já 
+desabrigados, motivaram a criação desse projeto, para que as pessoas possam denunciar 
+a pessoas que machucam os animais e acolhê-los.
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Como vimos anteriormente, nosso projeto tem como público-alvo as pessoas dispostas 
+a ajudar os animais, mas também os próprios bichinhos em si, que serão resgatados e 
+terão a chance de receber uma vida melhor, sem eles nosso software não existiria.
  
 # Especificações do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
+Coletamos informações atraves de entrevistas feitas pelo google forms onde a partir delas conseguimos determinar personas e desenhar seus respectivos mapas de empatia. Juntando as ideias com essas novas informações definimos os requisitos funcionais e os não funcionais.
 
 ## Personas e Mapas de Empatia
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
-> você deve ser enumerar e descrever precisamente e de forma
-> personalizada todos os principais envolvidos com a solução almeja. 
-> 
-> Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Como fazer um mapa de empatia - Vídeo](https://www.youtube.com/watch?v=JlKHGpVoA2Y)
-> 
-> 
-> **Exemplo de Persona**
-> 
-> ![Exemplo de Persona](imaages/../images/persona.png)
+> ![Exemplo de Persona](imaages/../images/Empatia.png)
+> ![Exemplo de Persona](imaages/../images/Empatia2.png)
+> ![Exemplo de Persona](imaages/../images/Empatia3.png)
 > 
 > Fonte: [Como criar uma persona para o seu negócio](https://raissaviegas.com.br/como-criar-uma-persona/)
 
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-> Apresente aqui as histórias de usuário que são relevantes para o
-> projeto de sua solução. As Histórias de Usuário consistem em uma
-> ferramenta poderosa para a compreensão e elicitação dos requisitos
-> funcionais e não funcionais da sua aplicação. Se possível, agrupe as
-> histórias de usuário por contexto, para facilitar consultas
-> recorrentes à essa parte do documento.
->
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+Logo no início da concepção do trabalho, o time dividiu as certezas, dúvidas e 
+suposições sobre o assunto, o grupo desenvolveu diversas perguntas para entrevistar 
+algumas pessoas que se sensibilizam com esse tema e que poderiam ser possíveis 
+usuários. Dessas pessoas foram extraídas várias informações, experiências e opiniões 
+sobre o assunto e o que gostaríamos de fazer com o nosso software, que ajudou o projeto 
+a ganhar uma base mais consistente.
+Com o filtrar das entrevistas, chegamos em algumas poucas personas que descreviam 
+muito bem todas essas pessoas, de forma geral, os possíveis usuários entrevistados 
+estavam super a favor da ideia, praticamente todos usariam o aplicativo, principalmente 
+se demonstrasse eficiência. Todos se assemelham em relação a tristeza que sentem e 
+concordam sobre as adversidades que esses animais desabrigados trazem para a 
+população, não obstante, concordam que o acolhimento desses animais e a castração 
+podem ser a grande solução, mas que não veem nenhum movimento por parte da 
+prefeitura para ajudar.
+Mesmo que as pessoas não vejam esses movimentos das prefeituras, algumas delas 
+tomam algumas atitudes, em Santa Luzia – MG, a prefeitura disponibilizou castração 
+gratuita e cuidados básicos aos animais recém adquiridos, e durante uma entrevista com 
+a professora da Escola de Veterinária da UFMG, Danielle Magalhães, ela conta que um 
+antigo programa chamado Cão Comunitário foi trazido de volta e reformulado, sendo 
+hoje um movimento que orienta comunidades a adotarem, e auxiliam-nas à cuidar deles.
+Com isso em mente, conseguimos ver que possui um público de grande potencial para 
+o uso da aplicação, e que podemos estabelecer uma comunicação melhor entres os 
+usuários e as entidades governamentais.
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
-### Requisitos Funcionais
-
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
-
-
-### Requisitos não Funcionais
-
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na
->   plataforma (ex: cadastro de usuário).
->
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade,
->   desempenho, confiabilidade, segurança ou outro (ex: suporte a
->   dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-> 
-> **Links Úteis**:
-> 
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
+Durante nosso constante debate sobre a elaboração da aplicação, identificamos que
+nossos requisitos funcionais são, o cadastro desses animais e a localização dos mesmos, 
+em seus perfis veremos suas localizações (que serão atualizadas através de outras 
+pessoas que pararem pra cadastrar esse animal que, vendo que existe outro igual com as 
+mesmas descrições e fotos, serão questionadas, e se realmente for o mesmo, será 
+atualizada e adicionada no perfil d’aquele animal.), o sistema de 
+identificação/comparação, confirmação de provação do usuário para prevenir golpes e 
+más intenções, o mapa em tempo real com a localização de alguns animais próximos.
+Já os requisitos não funcionais são, a variedades de contatos disponíveis de ONGs, Vets 
+e Lojas (afinal, não dependemos deles para o aplicativo funcionar e sim das pessoas 
+colaborarem juntas para a captura desses animais desabrigados), a segurança da conta também não é de altíssima urgência, já a velocidade do aplicativo ainda está em debate, 
+mas até então se encontra entre os requisitos não funcionais.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-> Enumere as restrições à sua solução. Lembre-se de que as restrições
-> geralmente limitam a solução candidata.
-> 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+As restrições são limitadores que comprometem a execução ou o desempenho do projeto 
+até seu resultado e são impostas por alguém ou um contexto, nosso projeto conta com 
+um curto prazo de execução, os custos, já que todos os integrantes não estão ganhando 
+nada para permanecerem no projeto.
 
 
 # Projeto de Interface
 
-......  COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
+## Fluxo de usuário e wireframe
 
-> Apresente as principais interfaces da solução. Discuta como 
-> foram elaboradas de forma a atender os requisitos funcionais, não
-> funcionais e histórias de usuário abordados nas [Especificações do
-> Projeto](#especificações-do-projeto).
+Nosso Fluxo do Usuário foi criado no papel através de esboços junto do wireframe, este 
+que acabamos juntando com o esboço do Fluxo, os pontos de encontro do aplicativo são 
+através da busca orgânica, busca paga, redes sociais, sites de notícia, 
+link/compartilhamento direto entra usuários.
+Abaixo se encontram algumas fotos do processo de Fluxograma e Wireframe.
 
-## User Flow
+![Exemplo de Wireframe](images/Wireframe_Fluxo.jpg)
 
-......  INCLUA AQUI O DIAGRAMA COM O FLUXO DO USUÁRIO NA APLICAÇÃO ......
+![Exemplo de Wireframe](images/Wireframe2.jpg)
 
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
-> mapear todo fluxo de telas do site ou app. Essa técnica funciona
-> para alinhar os caminhos e as possíveis ações que o usuário pode
-> fazer junto com os membros de sua equipe.
->
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
->
-> **Exemplo**:
-> 
-> ![Exemplo de UserFlow](images/userflow.jpg)
+![Exemplo de Wireframe](images/Esboço.jpg) 
+
+![Exemplo de Wireframe](images/Esboço2.jpg) 
 
 
-## Wireframes
-
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
-
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
-> estrutura de um site web e seu relacionamentos entre suas
-> páginas. Um wireframe web é uma ilustração semelhante ao
-> layout de elementos fundamentais na interface.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> 
-> **Exemplo**:
-> 
-> ![Exemplo de Wireframe](images/wireframe-example.png)
 
 
 # Metodologia
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Na situação atual do grupo, ainda não tivemos a necessidade de utilizar dessa 
+metodologia, porém, nas próximas etapas de desenvolvimento, o grupo acolherá esse 
+tipo de procedimento. Através do Trello, já começamos a nos preparar para essa nova 
+fase de desenvolvimento, tenha abaixo uma ideia de como está ficando.
 
-> Nesta parte do documento, você deve apresentar a metodologia 
-> adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
-> a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a
-> gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
-> 
+![Exemplo de Wireframe](images/TRELLO.png)
+
 > **Links Úteis**:
 > - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
 > - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
@@ -307,9 +234,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Divisão de Papéis
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Nessa primeira etapa do projeto, onde fizemos a parte de Entendimento da situação e a 
+parte de Exploração para mapearmos alguns detalhes (Usando do Framework Design 
+Thinking), fizemos todas as partes conjuntamente. Sempre nos reunindo e tomando 
+decisões em equipe, todos participaram. Futuramente, pretendemos utilizar nas 
+próximas etapa, o quadro Kanban e a metodologia SCRUM Framework.
 
-> Apresente a divisão de papéis e tarefas entre os membros do grupo.
 >
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
@@ -318,23 +248,21 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Ferramentas
 
-......  COLOQUE AQUI O SEU TEXTO - SIGA O EXEMPLO DA TABELA ABAIXO  ......
+Para a prototipagem escolhemos o Figma como programa base,
+
 
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
-|Processo de Design Thinkgin  | Miro |  https://miro.com/XXXXXXX | 
-|Repositório de código | GitHub | https://github.com/XXXXXXX | 
-|Hospedagem do site | Heroku |  https://XXXXXXX.herokuapp.com | 
-|Protótipo Interativo | MavelApp ou Figma | https://figma.com/XXXXXXX | 
+|Processo de Design Thinkgin  | Miro |  https://miro.com/app/board/uXjVOA2lx_g=/ | 
+|Repositório de código | GitHub | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7946100-cachorros-de-rua/tree/master/docs |  
+|Protótipo Interativo | MavelApp ou Figma | https://www.figma.com/file/itLu4O4jILxv0HZjBFtaWn/TIAW---Animais-Desabrigados?node-id=0%3A1| 
+|Comunicação  | Discord |  https://discord.com/ | 
 
->
-> Liste as ferramentas empregadas no desenvolvimento do
-> projeto, justificando a escolha delas, sempre que possível.
 > 
 > As ferramentas empregadas no projeto são:
 > 
-> - Editor de código.
-> - Ferramentas de comunicação
+> - Editor de código VS Code.
+> - Ferramentas de comunicação discord.
 > - Ferramentas de diagramação
 > - Plataforma de hospedagem
 > 
@@ -352,12 +280,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Controle de Versão
 
-......  COLOQUE AQUI O SEU TEXTO ......
 
-> Discuta como a configuração do projeto foi feita na ferramenta de
-> versionamento escolhida. Exponha como a gerência de tags, merges,
-> commits e branchs é realizada. Discuta como a gerência de issues foi
-> realizada.
 > A ferramenta de controle de versão adotada no projeto foi o
 > [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 > foi utilizado para hospedagem do repositório `upstream`.

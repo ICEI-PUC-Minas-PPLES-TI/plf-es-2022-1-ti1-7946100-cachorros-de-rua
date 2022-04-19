@@ -225,6 +225,16 @@ através da busca orgânica, busca paga, redes sociais, sites de notícia,
 link/compartilhamento direto entra usuários.
 Abaixo se encontram algumas fotos do processo de Fluxograma e Wireframe.
 
+![Exemplo de Wireframe](images/Wireframe_Fluxo.jpg)
+
+![Exemplo de Wireframe](images/Wireframe2.jpg)
+
+![Exemplo de Wireframe](images/Github-Workflow.png)
+
+![Exemplo de Wireframe](images/Github-Workflow.png)
+
+
+
 
 # Metodologia
 
@@ -233,7 +243,7 @@ metodologia, porém, nas próximas etapas de desenvolvimento, o grupo acolherá 
 tipo de procedimento. Através do Trello, já começamos a nos preparar para essa nova 
 fase de desenvolvimento, tenha abaixo uma ideia de como está ficando.
 
-![Exemplo de Wireframe](images/Github-Workflow.png)
+![Exemplo de Wireframe](images/TRELLO.png)
 
 > **Links Úteis**:
 > - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)

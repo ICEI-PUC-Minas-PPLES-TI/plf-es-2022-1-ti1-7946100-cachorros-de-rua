@@ -161,7 +161,9 @@ Coletamos informações atraves de entrevistas feitas pelo google forms onde a p
 > 
 > **Exemplo de Persona**
 > 
-> ![Exemplo de Persona](imaages/../images/persona.png)
+> ![Exemplo de Persona](imaages/../images/Empatia.png)
+> ![Exemplo de Persona](imaages/../images/Empatia2.png)
+> ![Exemplo de Persona](imaages/../images/Empatia3.png)
 > 
 > Fonte: [Como criar uma persona para o seu negócio](https://raissaviegas.com.br/como-criar-uma-persona/)
 
@@ -229,9 +231,9 @@ Abaixo se encontram algumas fotos do processo de Fluxograma e Wireframe.
 
 ![Exemplo de Wireframe](images/Wireframe2.jpg)
 
-![Exemplo de Wireframe](images/Github-Workflow.png)
+![Exemplo de Wireframe](images/Esboço.jpg) 
 
-![Exemplo de Wireframe](images/Github-Workflow.png)
+![Exemplo de Wireframe](images/Esboço2.jpg) 
 
 
 

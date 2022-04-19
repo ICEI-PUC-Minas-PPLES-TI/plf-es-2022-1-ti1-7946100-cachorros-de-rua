@@ -208,7 +208,7 @@ Abaixo se encontram algumas fotos do processo de Fluxograma e Wireframe.
 
 ![Exemplo de Wireframe](images/Wireframe_Fluxo.jpg)
 
-![Exemplo de Wireframe](images/Wireframe2.jpeg)
+![Exemplo de Wireframe](images/wireframe2.jpeg)
 
 ![Exemplo de Wireframe](images/Esboço.jpg) 
 

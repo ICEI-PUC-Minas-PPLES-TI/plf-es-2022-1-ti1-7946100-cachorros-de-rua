@@ -262,7 +262,7 @@ Para a prototipagem escolhemos o Figma como programa base,
 
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
-|Processo de Design Thinkgin  | Miro |  https://miro.com/XXXXXXX | 
+|Processo de Design Thinkgin  | Miro |  https://miro.com/app/board/uXjVOA2lx_g=/ | 
 |Repositório de código | GitHub | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7946100-cachorros-de-rua/tree/master/docs |  
 |Protótipo Interativo | MavelApp ou Figma | https://www.figma.com/file/itLu4O4jILxv0HZjBFtaWn/TIAW---Animais-Desabrigados?node-id=0%3A1| 
 |Comunicação  | Discord |  https://discord.com/ | 
@@ -271,7 +271,7 @@ Para a prototipagem escolhemos o Figma como programa base,
 > As ferramentas empregadas no projeto são:
 > 
 > - Editor de código VS Code.
-> - Ferramentas de comunicação WhatsApp e discord.
+> - Ferramentas de comunicação discord.
 > - Ferramentas de diagramação
 > - Plataforma de hospedagem
 > 

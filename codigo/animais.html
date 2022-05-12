@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animais de rua</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box-cliente {
+            width: 300px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Produtos</li>
+                <li>Serviços</li>
+                <li><a href="animais.html">Regiões</a></li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <h1>Pesquisar na região</h1>
+        <button onclick="getData()">Listar</button>
+        <div id="lista-clientes">
+            <div class="box-cliente">
+                <img height="607" src="Mapa.png" alt="mapa">
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+
+    <script>
+        var req = new XMLHttpRequest();
+        var url = 'https://randomuser.me/api/?results=5';
+
+        function processaDados() {
+            var dados = JSON.parse (req.responseText);
+            var saida = '';
+            for (i = 0; i < dados.results.length; i++) {
+                saida += `<div class="box-cliente">
+                    <img src="https://placekitten.com/260/420" alt="">
+                <p>${dados.results[i].name.first} ${dados.results[i].name.first} </p>
+                <p>sexo: ${dados.results[i].gender}</p>
+                <p>${dados.results[i].location.postcode} - ${dados.results[i].location.state}</p>
+                </div>`
+            }
+            document.getElementById('lista-clientes').innerHTML = saida;
+        }
+
+        function getData() {
+            req.onload = processaDados;
+            req.open('GET', url, true);
+            req.send();
+        }
+    </script>
+</body>
+
+</html>

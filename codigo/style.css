@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    background: #233D4D;
+}
+h1{
+    color: white;
+}
+a{
+    text-decoration: none;
+    display: block;
+    padding-bottom: 50px;
+}
+nav ul li{
+    width: 60px;
+    align-items: center;
+}
+
+nav{
+    display: inline;
+    align-items: center;
+    background: linear-gradient(-90deg, #233D4D 10%,/* #FE7F2D 15%, #FCCA46 30%, #A1C181 70%, */#619B8A 100%);
+    height: max-content;
+    border-radius: 60px;
+    width: 350px;
+    /*border-radius: 50px;*/
+    float: right;
+
+}
+nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    overflow: hidden;
+}
+footer{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: linear-gradient(0deg, #233D4D 10%,/* #FE7F2D 15%, #FCCA46 30%, #A1C181 70%, */#619B8A 100%);
+    padding-top: 5px;
+    padding-bottom: bottom;
+    color: white;
+    position: fixed;
+
+}
+main{
+    margin: 0%;
+    text-align: center;
+    height: 1050px;
+    min-height: calc(100% -);
+}
+nav .base{
+    display: inline-block;
+}
+.base{
+    box-sizing: border-box;
+    background-color: #233D4D;
+    width: calc(100% - 352px);
+}
+.card{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #619B8A;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
+    margin: 10px 25px 10px;
+    transition: 0.5s;
+}
+.card:hover{
+    height: 420px;
+}
+.img_1{
+    display: inline-block;
+    position: relative;
+    left: 0;
+    bottom: -5px;
+    width: 250px;
+    height: 180px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.img_1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.card .content .details h3{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2em;
+    display: block;
+    padding-top: 15px;
+    opacity: 0%;
+}
+.card:hover .content .details h3{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2em;
+    display: block;
+    padding-top: 15px;
+    opacity: 100%;
+}
+.actionBtn{
+    margin: 0;
+    padding-top: 5px;
+}
+.card .content .details h3 span{
+    font-size: 0.75e,;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.card .content .details .actionBtn{
+    display: flex;
+}
+button{
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #233D4D;
+    color: #fff;
+    cursor: pointer;
+}
+
+.perfil, .contatos{
+    display: inline-block;
+    height: calc(100% - 150px);
+    width: calc((100% - 400px) / 2);
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 0;
+    background: radial-gradient(circle, #233D4D 10%,/* #FE7F2D 15%, #FCCA46 30%, #A1C181 70%, */#619B8A 100%);
+    overflow: hidden;
+}
+.info{
+    float: left;
+    list-style-type: none;
+}
+.contatos h5{
+    font-weight: 800;
+    position: ;
+    padding-bottom: 250px;
+}
+
+
+.texto p { 
+	display: flex;
+flex-direction: column; 
+}
+.texto  { 
+	padding:0em 0.3em; 
+	color:#42d6d9; 
+	text-transform:uppercase;
+	font-weight:bold; 
+    font-size: 35px;
+	font-family:'open_sansbold';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

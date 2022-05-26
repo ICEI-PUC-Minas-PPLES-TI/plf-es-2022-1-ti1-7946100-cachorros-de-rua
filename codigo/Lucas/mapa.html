@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="style.css">    
 <meta charset="utf-8">
 <title>Add custom icons with Markers</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+<script src="dbfake.js"></script>
 <style>
-body { margin: 0; padding: 0; }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
-</style>
-</head>
-<body>
+    body { margin: 0; padding: 0; }
+    #map { position:fixed; top: 0; bottom: 0; width: 50%; height: 50%; }
+    </style>
+</head>   
 <style>
     .marker {
         display: block;
@@ -25,54 +26,14 @@ body { margin: 0; padding: 0; }
 <div id="map"></div>
 
 <script>
-	// TO MAKE THE MAP APPEAR YOU MUST
-	// ADD YOUR ACCESS TOKEN FROM
-	// https://account.mapbox.com
 	mapboxgl.accessToken = 'pk.eyJ1IjoibHV0cmluZGUiLCJhIjoiY2wzbTZqdGhuMDFsZjNjcGE0emJtZWlnbyJ9.vVCzS9YnqtD0W16mslEHOA';
-    const geojson = {
-        'type': 'FeatureCollection',
-        'features': [
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Foo',
-                    'iconSize': [60, 60]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [-66.324462, -16.024695]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Bar',
-                    'iconSize': [50, 50]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [-61.21582, -15.971891]
-                }
-            },
-            {
-                'type': 'Feature',
-                'properties': {
-                    'message': 'Baz',
-                    'iconSize': [40, 40]
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [-43.9305366, -19.9292053]
-                }
-            }
-        ]
-    };
+    
 
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-65.017, -16.457],
-        zoom: 5
+        center: [-43.9305366, -19.9292053],
+        zoom: 6
     });
 
     // Add markers to the map.
@@ -97,6 +58,9 @@ body { margin: 0; padding: 0; }
             .addTo(map);
     }
 </script>
+<body>
+    <header>    
 
+    </header>
 </body>
 </html>

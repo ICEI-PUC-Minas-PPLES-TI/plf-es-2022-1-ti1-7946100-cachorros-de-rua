@@ -33,3 +33,41 @@ var db = {
         }
     ]
 }
+const geojson = {
+    'type': 'FeatureCollection',
+    'features': [
+        {
+            'type': 'Feature',
+            'properties': {
+                'message': 'Gato pequeno',
+                'iconSize': [60, 60]
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-43.935064, -19.924375]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'message': 'Gato grande',
+                'iconSize': [50, 50]
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-43.9344931, -19.9166813]
+            }
+        },
+        {
+            'type': 'Feature',
+            'properties': {
+                'message': 'Suricato gigante vermelho',
+                'iconSize': [40, 40]
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [-43.9305366, -19.9292053]
+            }
+        }
+    ]
+};

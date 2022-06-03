@@ -39,29 +39,29 @@ const geojson = {
         {
             'type': 'Feature',
             'properties': {
-                'message': 'Foo',
+                'message': 'Gato pequeno',
                 'iconSize': [60, 60]
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [-66.324462, -16.024695]
+                'coordinates': [-43.935064, -19.924375]
             }
         },
         {
             'type': 'Feature',
             'properties': {
-                'message': 'Bar',
+                'message': 'Gato grande',
                 'iconSize': [50, 50]
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [-61.21582, -15.971891]
+                'coordinates': [-43.9344931, -19.9166813]
             }
         },
         {
             'type': 'Feature',
             'properties': {
-                'message': 'Baz',
+                'message': 'Suricato gigante vermelho',
                 'iconSize': [40, 40]
             },
             'geometry': {

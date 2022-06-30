@@ -4,7 +4,7 @@ var ACCESS_TOKEN = 'pk.eyJ1IjoibHV0cmluZGUiLCJhIjoiY2wzbTZqdGhuMDFsZjNjcGE0emJtZ
 const forwardGeocoding = function (address) {
 
 	var url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'
-			+ encodeURIComponent(address) + '.json?access_token='
+			+address + 'country=BR&.json?access_token='
 			+ ACCESS_TOKEN + '&limit=1';
 
 	request({ url: url, json: true }, function (error, response) {
@@ -26,7 +26,7 @@ const forwardGeocoding = function (address) {
 	})
 }
 
-var address = 'Indore'; // Sample data
+var address = '149%20Avenida%20Carandaí%20Belo%20Horizonte%20MG%20'; // endereço de teste, essa variavel tem q puxar do banco de dados o endereço de cada cachorro
 
 // Function call
 forwardGeocoding(address);

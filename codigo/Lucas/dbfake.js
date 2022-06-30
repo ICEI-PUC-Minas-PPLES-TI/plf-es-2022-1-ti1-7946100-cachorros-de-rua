@@ -40,7 +40,8 @@ const geojson = {
             'type': 'Feature',
             'properties': {
                 'message': 'Gato pequeno',
-                'iconSize': [60, 60]
+                'icon': `gato.png`,
+                
             },
             'geometry': {
                 'type': 'Point',
@@ -51,7 +52,7 @@ const geojson = {
             'type': 'Feature',
             'properties': {
                 'message': 'Gato grande',
-                'iconSize': [50, 50]
+                'icon': `cachorro.png`
             },
             'geometry': {
                 'type': 'Point',
@@ -62,7 +63,7 @@ const geojson = {
             'type': 'Feature',
             'properties': {
                 'message': 'Suricato gigante vermelho',
-                'iconSize': [40, 40]
+                'icon': `gato.png`
             },
             'geometry': {
                 'type': 'Point',

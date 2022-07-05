@@ -317,7 +317,7 @@ Para a prototipagem escolhemos o Figma como programa base,
 
 ## Tecnologias Utilizadas
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Para a execução do projeto utilizamos diversas tecnológias, dentre elas foram HTML, JavaScript, CSS , diversas APIs da internet, como MapBox para a criação de mapas dinâmicos e para a criação de scripts que convertessem endereços reais em coordenadas. Durante as sprints 2 e 3 tambem foram utilizadas APIs para geração aleatórias de dados e imagens, como randomuser API e a randomcat API. Foram utilizados também bootstrap para a criação da interface dos templates, Visual Studio Code para a edição e criação de códigos, além de suas extensões como o live share e live service para visualização das páginas e codificação simultanea.
 
 > Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
 > problema, ou seja, implementar a sua solução. Liste todas as

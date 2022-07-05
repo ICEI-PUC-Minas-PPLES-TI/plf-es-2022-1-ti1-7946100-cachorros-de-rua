@@ -17,7 +17,7 @@ function store(){
     }else{
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
-        window.open("mapa.html");
+        window.open("../../mapa.html");
     }
 }
 
@@ -32,7 +32,7 @@ function check(){
 
     if(userName.value == storedName && userPw.value == storedPw){
 
-    window.open("mapa.html");
+    window.open("../../mapa.html");
 
 
     }else{

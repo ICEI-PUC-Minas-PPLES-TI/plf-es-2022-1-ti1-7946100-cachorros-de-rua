@@ -1,0 +1,89 @@
+body {
+    background-image: url(https://cdn.discordapp.com/attachments/965437216237187132/991929425492967474/Tela_lol.svg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#logonavbar {
+    width: 70px;
+    margin-right: 10px;
+}
+
+#fotonavbar {
+    border-radius: 50%;
+    border: 10px;
+    width: 70px;
+    margin-left: 50px;
+}
+
+#sessaocentral {
+    padding-top: 10px;
+    padding-left: 20px;
+    border-radius: 30px;
+    border: 1px black solid;
+    overflow: hidden;
+    background-color: white;
+    width: 80vw;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+#insessao {
+    background-color: white;
+    height: 1200px;
+}
+
+.dropdown{
+    padding: 0px;
+}
+
+#fimfiltro {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#animaisfotos {
+
+}
+
+#cachorrofoto {
+    width: 250px;
+}
+
+@media screen and (min-width:1380px) {
+    #logonavbar {
+        width: 150px;
+        margin-right: 10px;
+    }
+
+    #fotonavbar {
+        border-radius: 50%;
+        border: 10px;
+        width: 70px;
+        margin-left: 50px;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .nav-link {
+        font-size: 1.8rem;
+    }
+}
+
+.loginfo1{
+    background-color: blue;
+}
+.loginfo2{
+    background-color: red;
+}

@@ -1,229 +1,95 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html>
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta name="viewport" content="width=device-width">
+  <title>Animais Desabrigados</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="codigo/Final/css/style.css">
-  <script src="codigo/Final/dbfake.js"></script> 
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
-  <title>ANIMAIS DESABRIGADOS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <script src="./src/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"logo
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  
+  <link href="a1.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <img id="logonavbar"
-        src="https://cdn.discordapp.com/attachments/965437216237187132/991912381968044113/logobarra.png" alt="logo">
-      <a class="navbar-brand text-center" href="index.html">ANIMAIS<br>DESABRIGADOS</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">MAPA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="codigo/Final/registro.html">REGISTRAR</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">REGISTRADOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">SALVOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">SOBRE</a>
-          </li>
-        </ul>
-        <img id="fotonavbar" src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/av1.jpg" alt="img">
-      </div>
-    </div>
-  </nav>
+ <!----LOGIN><--->
+  
+ <div class="container-fluid">
+   
+<section class="h-100 gradient-form" style="background-color: #CLAF7D;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
 
-  <!-- Div principal -->
-  <section id="sessaocentral" class="container">
-    <div id="insessao" class="row">
-      <div class="col">
-        <div id="map" class="text-center p-5 m-5">
-          
-          <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoibHV0cmluZGUiLCJhIjoiY2wzbTZqdGhuMDFsZjNjcGE0emJtZWlnbyJ9.vVCzS9YnqtD0W16mslEHOA';
-        
-        
-            const map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/mapbox/streets-v11',
-                center: [-43.935064, -19.924375],
-                zoom: 14
-            });
-    
-        
-            // Add markers to the map.
-            for (const marker of geojson.features) {
-                // Create a DOM element for each marker.
-                const el = document.createElement('div');
-                const width = 50;
-                const height = 50;
-                const foto = marker.properties.icon;
-                el.className = 'marker';
-                el.style.backgroundImage = `url(codigo/Final/${foto})`;
-                el.style.width = `${width}px`;
-                el.style.height = `${height}px`;
-                el.style.backgroundSize = '100%';
-        
-                el.addEventListener('click', () => {
-                    window.alert(marker.properties.message);
-                });
-        
-                // Add markers to the map.
-                new mapboxgl.Marker(el)
-                    .setLngLat(marker.geometry.coordinates)
-                    .addTo(map);
-            }
-        </script>
-        </div>
-      </div>
-      <div class="col">
-        <div id="busca" class="row">
-          <div class="container">
-            <div class="row">
-              Busque por endereços
-              <input type="digite aqui">
+                <div class="text-center">
+                  <img src="logobarra.png"
+                    style="width: 185px;" alt="logo">
+                </div>
+                <p class="text-center h2 fw-bold mb-5 mx-1 mx-md-4 mt-4" >Entrar</p>
+                <form name='form-login'>
+                  <p>Email</p>
+
+                  <div class="form-outline mb-4">
+
+
+                    <input type="email" id="userName" class="form-control"
+                      placeholder="Digite seu email" />
+
+
+                    <label class="form-label" for="form2Example11"></label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example22">Senha</label>
+
+                    <input type="password"  placeholder="Digite sua senha" id= "userPw" class="form-control" />
+
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <input class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" id= "login_btn" type="submit" value="Login" onclick="check()">
+                    
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">Não possuí conta?</p>
+                    <a href="cadastro.html" class="btn btn-outline-danger">Registre-se</a>
+                  </div>
+
+                </form>
+
+                   </div>
             </div>
-            <div class="row">
-              <div class="dropdown">
-                <div class="col">
-                  Filtro<br>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div id="fimfiltro" class="row">
-                  <div class="col">
-                    <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="animaisfotos" class="row">
-              <div class="col">
-
-                <!-- Informações vem aqui -->
-                <div class="card" style="width: 250px;">
-                  <img id="cachorrofoto" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" class="card-img-top" alt="exemplocachorro">
-                  <div class="card-body">
-                    <h5 class="card-title">Título do cartão</h5>
-                    <p class="card-text">Texto de exemplo</p>
-                    <a href="#" class="btn btn-primary">Link para a localização</a>
-                  </div>
-                </div>
-                <!-- fim -->
-
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <h4 class="mb-4">Seja bem vindo ao site Animais Desabrigados</h4>
+                <p class="small mb-0">Somos um grupo que tem buscado desenvolver uma plataforma onde as pessoas possam compartilhar e encontrar animais em situações de rua, estamos juntando esforços para criar um ambiente respeitoso e que gere novas oportunidades de uma vida descente para os diversos animaizinhos pelo mundo que hoje se encontram nas ruas.
+<br><br>  Tentamos oferecer diversos auxílios para as pessoas que usarem nossa plataforma para resgatar os animais, existem diversos veterinários registrados já a disposição, com serviços gratuitos ou com desconto, além de lojas registradas que também auxiliam com o máximo que puderem até o momento.            
                 
-                <!-- Informações vem aqui -->
-                <div class="card" style="width: 250px;">
-                  <img id="cachorrofoto" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" class="card-img-top" alt="exemplocachorro">
-                  <div class="card-body">
-                    <h5 class="card-title">Título do cartão</h5>
-                    <p class="card-text">Texto de exemplo</p>
-                    <a href="#" class="btn btn-primary">Link para a localização</a>
-                  </div>
-                </div>
-                <!-- fim -->
-
-              </div>
-              <div class="col">
-
-                <!-- Informações vem aqui -->
-                <div class="card" style="width: 250px;">
-                  <img id="cachorrofoto" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" class="card-img-top" alt="exemplocachorro">
-                  <div class="card-body">
-                    <h5 class="card-title">Título do cartão</h5>
-                    <p class="card-text">Texto de exemplo</p>
-                    <a href="#" class="btn btn-primary">Link para a localização</a>
-                  </div>
-                </div>
-                <!-- fim -->
-
-                <!-- Informações vem aqui -->
-                <div class="card" style="width: 250px;">
-                  <img id="cachorrofoto" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" class="card-img-top" alt="exemplocachorro">
-                  <div class="card-body">
-                    <h5 class="card-title">Título do cartão</h5>
-                    <p class="card-text">Texto de exemplo</p>
-                    <a href="#" class="btn btn-primary">Link para a localização</a>
-                  </div>
-                </div>
-                <!-- fim -->
-
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
+  </div>
+</section>
+ </div>
+   
+<script src="script.js"></script>
 </body>
 
 </html>

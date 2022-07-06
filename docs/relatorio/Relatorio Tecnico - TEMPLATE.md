@@ -214,7 +214,31 @@ Abaixo se encontram algumas fotos do processo de Fluxograma e Wireframe.
 
 ![Exemplo de Wireframe](images/Esboço2.jpg) 
 
+## Protótipo Final
 
+![Prototipo Final](images/Prototipo1.png)
+
+![Prototipo Final](images/Prototipo2.png)
+
+![Prototipo Final](images/Prototipo3.png)
+
+![Prototipo Final](images/Prototipo4.png)
+
+![Prototipo Final](images/Prototipo5.png)
+
+![Prototipo Final](images/Prototipo6.png)
+
+![Prototipo Final](images/Prototipo7.png)
+
+![Prototipo Final](images/Prototipo8.png)
+
+![Prototipo Final](images/Prototipo9.png)
+
+![Prototipo Final](images/Prototipo10.png)
+
+![Prototipo Final](images/Prototipo11.png)
+
+![Prototipo Final](images/sistemacor.png)
 
 
 # Metodologia
@@ -313,11 +337,17 @@ Para a prototipagem escolhemos o Figma como programa base,
 
 # Projeto da Solução
 
-......  COLOQUE AQUI O SEU TEXTO ......
 
 ## Tecnologias Utilizadas
 
-Para a execução do projeto utilizamos diversas tecnológias, dentre elas foram HTML, JavaScript, CSS , diversas APIs da internet, como MapBox para a criação de mapas dinâmicos e para a criação de scripts que convertessem endereços reais em coordenadas. Durante as sprints 2 e 3 tambem foram utilizadas APIs para geração aleatórias de dados e imagens, como randomuser API e a randomcat API. Foram utilizados também bootstrap para a criação da interface dos templates, Visual Studio Code para a edição e criação de códigos, além de suas extensões como o live share e live service para visualização das páginas e codificação simultanea.
+Para a execução do projeto utilizamos diversas tecnologias, dentre elas o HTML, CSS,
+JavaScript e Bootstrap para criação da interface, APIs da internet, como MapBox para
+a criação de mapas dinâmicos e para a criação de scripts que convertem endereços reais
+em coordenadas. Durante as sprints 2 e 3, também foram utilizadas APIs para geração
+aleatórias de dados e imagens, como randomuser API e a randomcat API. Todas essas
+interações foram feitas através do Visual Studio Code, apoiando-se em extensões como
+Live Server e Live Share, para acompanhar o processo de desenvolvimento em tempo
+real e o outro para editar códigos em grupo em tempo real também.
 
 > Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
 > problema, ou seja, implementar a sua solução. Liste todas as
@@ -346,7 +376,20 @@ Para a execução do projeto utilizamos diversas tecnológias, dentre elas foram
 
 # Avaliação da Aplicação
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Todos os artefatos foram testados de forma unitária, e depois testados em uma avaliação
+integrada.
+TESTE 1: Registrar usuário e, após registro, ser direcionado para página principal.
+
+![Teste 1](images/Teste1.jpg)
+
+TESTE 2: Aqui no registro de animais, há um animal registrado e fazemos uma
+alteração nas informações dele, logo em seguida excluímos o mesmo.
+
+![Teste 2](images/teste2.jpg)
+
+TESTE 3: Tentar entrar com login não registrado será negado
+
+![Teste 3](images/teste3.jpg)
 
 > Apresente os cenários de testes utilizados na realização dos testes da
 > sua aplicação. Escolha cenários de testes que demonstrem os requisitos
@@ -354,7 +397,14 @@ Para a execução do projeto utilizamos diversas tecnológias, dentre elas foram
 
 ## Plano de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Logo de início o grupo vem planejando com o passar das sprints, os testes que faríamos,
+o grupo utilizou de testes de caixa branca para testes unitários voltados ao código,
+visualizando erros mais visíveis e simples de serem resolvidos, isso durante a primeira
+e a segunda Sprint, já na Sprint final, o grupo se juntou e testou mais uma vez o código
+em suas micro-partes para garantir que não haja conflito. (OBS: Houve conflito). Já na
+união do código, foi utilizado o teste de caixa cinza, onde testamos “graficamente” o
+resultado do programa, e qualquer divergência, analisávamos o código enquanto
+“compilávamos”.
 
 > Enumere quais cenários de testes foram selecionados para teste. Neste
 > tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
@@ -378,7 +428,14 @@ Para a execução do projeto utilizamos diversas tecnológias, dentre elas foram
 
 ## Registros de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Durantes os testes de integração, fomos surpreendidos com diversos conflitos de código,
+tanto por nomes de variáveis ou arquivos, quantos partes do código que estavam
+separados por outras páginas. Com muito cooperação, conseguimos superar alguns dos
+problemas, mas o site perdeu um pouco do escopo que pretendíamos alcançar no final,
+abrindo os olhos da equipe para a complexidade que pequenos erros de comunicação
+podem gerar. Com esses problemas afetando aos montes o trabalho, o grupo já se planeja
+melhor para os próximos projetos, onde visamos separar os artefatos e arquitetar todas
+as pastas e arquivos, com seus nomes, antes de começar o projeto de fato. 
 
 > Discorra sobre os resultados do teste. Ressaltando pontos fortes e
 > fracos identificados na solução. Comente como o grupo pretende atacar
@@ -392,20 +449,22 @@ DARWIN, Charles. The Variation of Animals and Plants Under Domestication. 1ª
 Edição. Reino Unido. 1868
 BRASIL. (Lei 9.605/1998). Lei de Crimes Ambientais. Direito Penal do Ambiente. 7ª
 Edição.
-http://www.planalto.gov.br/ccivil_03/leis/l9605.htm?fbclid=IwAR1PnoY0DasNQTn1
-uQSSycPcDftuWwLhjDysUgLAQVMGA529m6FfTtVltOI#art32
+http://www.planalto.gov.br/ccivil_03/leis/l9605.htm?fbclid=IwAR1PnoY0DasNQTn1uQSSycPcDftuWwLhjDysUgLAQVMGA529m6FfTtVltOI#art32
+
 LEMOS, Simone. Adoção e Abandono de animais durante a Pandemia. Jornal da 
-USP. 2021. Disponível em: https://jornal.usp.br/atualidades/cresce-o-numero-deadocoes-e-de-abandono-de-animais-na-pandemia/
+USP. 2021. Disponível em: https://jornal.usp.br/atualidades/cresce-o-numero-de-adocoes-e-de-abandono-de-animais-na-pandemia/
+
 Âgencia de Notícias de Direitos Animais. Índice de animais desabrigados no Brasil. 
 Jusbrasil. 2013. Disponível em:
-https://anda.jusbrasil.com.br/noticias/100681698/brasil-tem-30-milhoes-de-animaisabandonados
+https://anda.jusbrasil.com.br/noticias/100681698/brasil-tem-30-milhoes-de-animais-abandonados
+
 DE CARMO, Ruleandson. Programa de manejo possibilita que comunidades ‘adotem’
 animais de rua. UFMG. 2022. Disponível em:
-https://ufmg.br/comunicacao/noticias/programa-cao-comunitario-busca-qualidade-devida-aos-animais-abandonados
+https://ufmg.br/comunicacao/noticias/programa-cao-comunitario-busca-qualidade-de-vida-aos-animais-abandonados
+
 MARCHINA, André. Abandono de animais bate recorde na pandemia e problema não 
 é só brasileiro. Uol. 2021. Disponível em:
-https://www.uol.com.br/nossa/colunas/coluna-do-veterinario/2021/03/11/abandonode-animais-bate-recorde-na-pandemia-e-problema-nao-e-sobrasileiro.htm#:~:text=A%20mesma%20OMS%20estima%20em,mais%20comum%2
-0em%20pa%C3%ADses%20pobres
+https://www.uol.com.br/nossa/colunas/coluna-do-veterinario/2021/03/11/abandono-de-animais-bate-recorde-na-pandemia-e-problema-nao-e-so-brasileiro.htm#:~:text=A%20mesma%20OMS%20estima%20em,mais%20comum%20em%20pa%C3%ADses%20pobres
 
 > Inclua todas as referências (livros, artigos, sites, etc) utilizados
 > no desenvolvimento do trabalho.

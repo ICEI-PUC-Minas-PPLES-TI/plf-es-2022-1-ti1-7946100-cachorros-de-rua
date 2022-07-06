@@ -157,7 +157,7 @@
             // Preenche o formulário quando o usuario clicar em uma linha da tabela 
             $("#grid-animais").on("click", "tr", function (e) {
                 let linhaAnimal = this;
-                console.log(linhaAnimal.children)
+                const colunas = linhaAnimal.children
 
                 $("#inputId").val(colunas[0].innerText);
                 $("#inputPorte").val(colunas[1].innerText);

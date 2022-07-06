@@ -388,7 +388,24 @@ Para a execução do projeto utilizamos diversas tecnológias, dentre elas foram
 
 # Referências
 
-......  COLOQUE AQUI O SEU TEXTO ......
+DARWIN, Charles. The Variation of Animals and Plants Under Domestication. 1ª 
+Edição. Reino Unido. 1868
+BRASIL. (Lei 9.605/1998). Lei de Crimes Ambientais. Direito Penal do Ambiente. 7ª
+Edição.
+http://www.planalto.gov.br/ccivil_03/leis/l9605.htm?fbclid=IwAR1PnoY0DasNQTn1
+uQSSycPcDftuWwLhjDysUgLAQVMGA529m6FfTtVltOI#art32
+LEMOS, Simone. Adoção e Abandono de animais durante a Pandemia. Jornal da 
+USP. 2021. Disponível em: https://jornal.usp.br/atualidades/cresce-o-numero-deadocoes-e-de-abandono-de-animais-na-pandemia/
+Âgencia de Notícias de Direitos Animais. Índice de animais desabrigados no Brasil. 
+Jusbrasil. 2013. Disponível em:
+https://anda.jusbrasil.com.br/noticias/100681698/brasil-tem-30-milhoes-de-animaisabandonados
+DE CARMO, Ruleandson. Programa de manejo possibilita que comunidades ‘adotem’
+animais de rua. UFMG. 2022. Disponível em:
+https://ufmg.br/comunicacao/noticias/programa-cao-comunitario-busca-qualidade-devida-aos-animais-abandonados
+MARCHINA, André. Abandono de animais bate recorde na pandemia e problema não 
+é só brasileiro. Uol. 2021. Disponível em:
+https://www.uol.com.br/nossa/colunas/coluna-do-veterinario/2021/03/11/abandonode-animais-bate-recorde-na-pandemia-e-problema-nao-e-sobrasileiro.htm#:~:text=A%20mesma%20OMS%20estima%20em,mais%20comum%2
+0em%20pa%C3%ADses%20pobres
 
 > Inclua todas as referências (livros, artigos, sites, etc) utilizados
 > no desenvolvimento do trabalho.

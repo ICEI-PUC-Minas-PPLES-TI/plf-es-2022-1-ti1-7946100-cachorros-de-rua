@@ -31,7 +31,7 @@
             // Popula a tabela com os registros do banco de dados
             for (let i = 0; i < db.data.length; i++) {
                 let animal = db.data[i];
-                $("#table-animais").append(`<tr>
+                $("#table-animais").append(`<tr id='${animal.id}'>
                     <td scope="row">${animal.id}</td>
                     <td>${animal.porte}</td>
                     <td>${animal.anl}</td>
@@ -157,9 +157,9 @@
             // Preenche o formulário quando o usuario clicar em uma linha da tabela 
             $("#grid-animais").on("click", "tr", function (e) {
                 let linhaAnimal = this;
-                console.log(linhaAnimal.rows)
+                console.log(linhaAnimal.id)
 
-                console.log(colunas)
+                
 
                 $("#inputId").val(colunas[0].innerText);
                 $("#inputPorte").val(colunas[1].innerText);
@@ -184,7 +184,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #c9af7d;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="logobarra.png" alt="" width="120" height="80"></a>
+            <a class="navbar-brand" href="mapa.html"><img src="logobarra.png" alt="" width="120" height="80"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -193,7 +193,7 @@
                 <ul class="navbar-nav mx-auto">
                     <a class="navbar-brand flex-wrap text-sm-center nav-link" href="mapa.html">MAPA</a>
                     <a class="navbar-brand flex-wrap text-sm-center nav-link" href="registro.html">REGISTRO</a>
-                    <a class="navbar-brand flex-wrap text-sm-center nav-link" href="#">SOBRE</a>
+                    <a class="navbar-brand flex-wrap text-sm-center nav-link" href="perfil_usuario.html">ONGs</a>
                 </ul>
             </div>
         </div>

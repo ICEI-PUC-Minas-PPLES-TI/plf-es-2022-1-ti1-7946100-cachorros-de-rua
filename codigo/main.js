@@ -3,7 +3,7 @@
 const chegada = (endereco) => {
     document.getElementById('rua').value = endereco.logradouro;
     document.getElementById('bairro').value = endereco.bairro;
-    document.getElementById('cidade').value = endereco.localidade;
+    document.getElementById('cidadeloja').value = endereco.localidade;
     document.getElementById('estado').value = endereco.uf;
   
   }
@@ -16,7 +16,7 @@ const chegada = (endereco) => {
       if(endereco.hasOwnProperty('erro')){
         document.getElementById('rua').value = 'cep Invalido';
         document.getElementById('bairro').value = 'cep Invalido';
-        document.getElementById('cidade').value = 'cep Invalido';
+        document.getElementById('cidadeloja').value = 'cep Invalido';
         document.getElementById('estado').value = 'cep Invalido';
         document.querySelector('#salvar').disabled = true;
       }else{
@@ -39,9 +39,9 @@ const chegada = (endereco) => {
            console.log(bairro)
            bairro.disabled = true
            
-           const cidade= document.querySelector('#cidade')
-           console.log(cidade)
-           cidade.disabled = true
+           const cidadeloja= document.querySelector('#cidadeloja')
+           console.log(cidadeloja)
+           cidadeloja.disabled = true
            
            const estado= document.querySelector('#estado')
            console.log(estado)
@@ -56,20 +56,20 @@ const chegada = (endereco) => {
     }
   });
 
-var input = document.querySelector("#celular");
+var input = document.querySelector("#celularloja");
 input.addEventListener("keypress", function(e) {
     if(!checknumber(e)) {
       e.preventDefault();
   }
 });
-var input = document.querySelector("#nome");
+var input = document.querySelector("#nomeloja");
 input.addEventListener("keypress", function(e) {
     if(!checkChar(e)) {
       e.preventDefault();
   }
 });
 
-var input = document.querySelector("#cidade");
+var input = document.querySelector("#cidadeloja");
 input.addEventListener("keypress", function(e) {
     if(!checkChar(e)) {
       e.preventDefault();
@@ -96,6 +96,11 @@ function checkChar(e) {
 }
 
 
+
+
+
+
+
 const openModal = () => document.getElementById('modal').classList.add('active')
 const openModal2 = () => document.getElementById('modal2').classList.add('active')
 
@@ -108,28 +113,28 @@ const closeModal = () => {
     document.getElementById('modal').classList.remove('active')
 }
 
-const getLocalStorage = () => JSON.parse(localStorage.getItem('db_client')) ?? []
-const setLocalStorage = (dbClient) => localStorage.setItem("db_client", JSON.stringify(dbClient))
+const getLocalStorage = () => JSON.parse(localStorage.getItem('db_loja')) ?? []
+const setLocalStorage = (dbloja) => localStorage.setItem("db_loja", JSON.stringify(dbloja))
 
 // CRUD - create read update delete
 const deleteClient = (index) => {
-    const dbClient = readClient()
-    dbClient.splice(index, 1)
-    setLocalStorage(dbClient)
+    const dbloja = readClient()
+    dbloja.splice(index, 1)
+    setLocalStorage(dbloja)
 }
 
 const updateClient = (index, client) => {
-    const dbClient = readClient()
-    dbClient[index] = client
-    setLocalStorage(dbClient)
+    const dbloja = readClient()
+    dbloja[index] = client
+    setLocalStorage(dbloja)
 }
 
 const readClient = () => getLocalStorage()
 
 const createClient = (client) => {
-    const dbClient = getLocalStorage()
-    dbClient.push (client)
-    setLocalStorage(dbClient)
+    const dbloja = getLocalStorage()
+    dbloja.push (client)
+    setLocalStorage(dbloja)
 }
 
 const isValidFields = () => {
@@ -141,19 +146,19 @@ const isValidFields = () => {
 const clearFields = () => {
     const fields = document.querySelectorAll('.modal-field')
     fields.forEach(field => field.value = "")
-    document.getElementById('nome').dataset.index = 'new'
+    document.getElementById('nomeloja').dataset.index = 'new'
 }
 
 const saveClient = () => {
     debugger
     if (isValidFields()) {
         const client = {
-            nome: document.getElementById('nome').value,
-            email: document.getElementById('email').value,
-            celular: document.getElementById('celular').value,
-            cidade: document.getElementById('cidade').value
+            nomeloja: document.getElementById('nomeloja').value,
+            emailloja: document.getElementById('emailloja').value,
+            celularloja: document.getElementById('celularloja').value,
+            cidadeloja: document.getElementById('cidadeloja').value
         }
-        const index = document.getElementById('nome').dataset.index
+        const index = document.getElementById('nomeloja').dataset.index
         if (index == 'new') {
             createClient(client)
             updateTable()
@@ -169,10 +174,10 @@ const saveClient = () => {
 const createRow = (client, index) => {
     const newRow = document.createElement('tr')
     newRow.innerHTML = `
-        <td>${client.nome}</td>
-        <td>${client.email}</td>
-        <td>${client.celular}</td>
-        <td>${client.cidade}</td>
+        <td>${client.nomeloja}</td>
+        <td>${client.emailloja}</td>
+        <td>${client.celularloja}</td>
+        <td>${client.cidadeloja}</td>
         <td>
             <button type="button" class="button green" id="edit-${index}">Editar</button>
             <button type="button" class="button red" id="delete-${index}" >Excluir</button>
@@ -187,17 +192,17 @@ const clearTable = () => {
 }
 
 const updateTable = () => {
-    const dbClient = readClient()
+    const dbloja = readClient()
     clearTable()
-    dbClient.forEach(createRow)
+    dbloja.forEach(createRow)
 }
 
 const fillFields = (client) => {
-    document.getElementById('nome').value = client.nome
-    document.getElementById('email').value = client.email
-    document.getElementById('celular').value = client.celular
-    document.getElementById('cidade').value = client.cidade
-    document.getElementById('nome').dataset.index = client.index
+    document.getElementById('nomeloja').value = client.nomeloja
+    document.getElementById('emailloja').value = client.emailloja
+    document.getElementById('celularloja').value = client.celularloja
+    document.getElementById('cidadeloja').value = client.cidadeloja
+    document.getElementById('nomeloja').dataset.index = client.index
 }
 
 const editClient = (index) => {
@@ -218,7 +223,7 @@ const editDelete = (event) => {
             const client = readClient()[index]
             let avisoDelete = document.querySelector('#avisoDelete')
 
-            avisoDelete.textContent = `Deseja excluir a ONG? ${client.nome}`
+            avisoDelete.textContent = `Deseja excluir a ONG? ${client.nomeloja}`
             openModal2()
 
         // APAGAR O REGISTRO
@@ -259,7 +264,5 @@ document.getElementById('cancelar2')
 
 
 
-    function getUserById(id) {
-        return JSON.parse(localStorage.getItem('users')).filter(users => users.id === id)
-    }
+
    

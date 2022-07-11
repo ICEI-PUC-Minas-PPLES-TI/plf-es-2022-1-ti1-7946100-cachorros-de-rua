@@ -1,0 +1,30 @@
+cff-version: 1.0.1
+message: Nosso site veio para auxiliar as pessoas na hora da identificação e resgate de animais de rua.
+title: Cachorros de rua desabrigados.
+authors:
+  - family-names: Monteiro Lima
+    given-names: Lucas
+  - family-names: Dolabela Marques
+    given-names: Gabirel
+  - family-names: Otávio Pelegrino
+    given-names: Enzo
+  - family-names: Xavier de Souza
+    given-names: Adriel
+  - family-names: Fernandes de Oliveira
+    given-names: Matheus
+  - family-names: Dias de Carvalho
+    given-names: Paloma
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Soares Vieira de Vasconcelos
+    given-names: Amália
+keywords:
+  -  Cachorros de rua desabrigados
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-ti1-7946100-cachorros-de-rua
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2022-07-10
